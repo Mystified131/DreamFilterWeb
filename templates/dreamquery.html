@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+<div align = "center">
+    <h1>Introducing The 'Dream Filter'</h1>
+
+    <p align = "center"><h4><em>Just enter some text and press 'prose submit' or 'poetry submit'.</em></h4>
+    The code will render your text into a new, dreamlike version, and save it.<br></p>
+
+    <br>
+
+    <form action = "/dreamresultprose" method='post'>
+        <label><h5><em>Read your text in a new, 'dream version'.</em></h5><br>
+
+            <input type="text" name='prosechunk' /><br><br>
+
+        <input type="submit" value = "Prose Submit" />
+    </form>
+
+    <br><br><br>
+
+    <form action = "/dreamresultpoetry" method='post'>
+        <label><h5><em>Read your text in a new, 'dream version'.</em></h5><br>
+
+            <input type="text" name='poetrychunk' /><br><br>
+
+        <input type="submit" value = "Poetry Submit" />
+    </form>
+
+<br>
+
+
+{% endblock %}

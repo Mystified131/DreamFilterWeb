@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+<div align = "center">
+<h1>Dream Filter</h1>
+<br>
+<h4><em>A Prose Dream Version</em></h4>
+
+<div>The dream has been stored in the main server page by time and type.</div>
+
+<br>
+
+<h4>The filename is : {{textfile}}</h4>
+
+<br>
+
+<form action = "/download">
+    <br>
+    <input type="submit" value = "Download File" />
+    </form>
+    <br><br>
+
+{% endblock %}
